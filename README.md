@@ -42,6 +42,7 @@
 <img src = "pics/6.png" alt ="Search Image" width = "25%" Height ="25%">
 
 เมื่อทำการ Search Image รูปภาพที่เรา Input ค่าต่าง ๆ เข้าไปจะปรากฏขึ้น
+
 <img src = "pics/7.png" alt ="Display Image" width = "25%" Height ="25%">
 
 # Demo สาธิตวิธีการใช้งาน
