@@ -18,9 +18,11 @@
 
 # ตัวอย่างโปรแกรม
 เมื่อทำการ Run ขึ้นมา
+
 <img src = "pics/1.png" alt ="Start App" width = "25%" Height ="25%">
 
 ทำการป้อน Keyword
+
 <img src = "pics/2.png" alt ="Input Keyword" width = "25%" Height ="25%">
 
 ทำการป้อน Width
