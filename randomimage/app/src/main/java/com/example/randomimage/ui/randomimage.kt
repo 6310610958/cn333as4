@@ -31,6 +31,14 @@ fun Randomimageapi() {
     var url by remember { mutableStateOf("") }
     var start by remember { mutableStateOf("") }
     val focusManager = LocalFocusManager.current
+    val errorMessage = when {
+        start.isBlank() -> "Please enter the keyword"
+        width.isBlank() -> "Please enter the width"
+        height.isBlank() -> "Please enter the height"
+        width.toIntOrNull()?.let { it !in 100..900 } == true -> "Enter a value between 100 to 900 for WIDTH!"
+        height.toIntOrNull()?.let { it !in 100..900 } == true -> "Enter a value between 100 to 900 for HEIGHT!"
+        else -> null
+    }
 
     Column(
         modifier = Modifier.padding(32.dp),
@@ -89,19 +97,13 @@ fun Randomimageapi() {
 
         Spacer(Modifier.height(10.dp))
 
-        val errorMessage = when {
-            start.isBlank() -> "Please enter the keyword"
-            width.isBlank() -> "Please enter the width"
-            height.isBlank() -> "Please enter the height"
-            else -> null
-        }
-
         Button(
             onClick = {
                 if (errorMessage == null) {
                     url = "https://loremflickr.com/$width/$height/$start"
                 }
             },
+            enabled = errorMessage == null,
             modifier = Modifier.fillMaxWidth()
         ) {
             Text(text = "Search Image", fontSize = 25.sp)
