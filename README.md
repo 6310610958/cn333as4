@@ -46,4 +46,4 @@
 <img src = "pics/7.png" alt ="Display Image" width = "25%" Height ="25%">
 
 # Demo สาธิตวิธีการใช้งาน
-LinkVideo=> [Click_Here](https://youtu.be/pg7fsfvJBvs)
+LinkVideo=> [Click_Here](https://youtu.be/NggJFkdSk10)
